@@ -11,8 +11,21 @@
   </head>
   <body>
     <div class="main">
-      <div class="emoji mb-6">💣🤯💥</div>
-      <button class="button">Boom?</button>
+        <form autocomplete="on">
+            <div class="input">
+            <label for="ccname">ccname</label>
+            <input type="text" name="ccname" placeholder="ccname" />
+
+            <label for="cardnumber">cardnumber</label>
+            <input type="number" name="cardnumber" placeholder="1111-2222-3333-4444" />
+
+            <label for="cvc">cvc</label>
+            <input type="number" maxlength="3" name="cvc" placeholder="cvc" />
+
+            <label for="cc-exp">cc-exp</label>
+            <input id="cc-exp" name="cc-exp" type="text" pattern="[0-9]*" inputmode="numeric">
+            </div>
+        </form>        
     </div>
   </body>
 </html>
